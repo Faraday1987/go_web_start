@@ -26,7 +26,7 @@ func NewHandlers(r *Repository) {
 
 func (f *Repository) Home(w http.ResponseWriter, r *http.Request) {
 
-	render.RenderTemplate(w, "home.page.tmpl", &models.TemplateData{})
+	render.RenderTemplate(w, "home.page.tmpl", &models.TemplateDataType{})
 }
 
 func (f *Repository) About(w http.ResponseWriter, r *http.Request) {
@@ -35,7 +35,7 @@ func (f *Repository) About(w http.ResponseWriter, r *http.Request) {
 	stringMap := make(map[string]string)
 	stringMap["micoolparam"] = "This is mi cool param ❤️"
 
-	render.RenderTemplate(w, "about.page.tmpl", &models.TemplateData{
+	render.RenderTemplate(w, "about.page.tmpl", &models.TemplateDataType{
 		StringMap: stringMap,
 	})
 }
