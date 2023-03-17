@@ -1,0 +1,9 @@
+.header__logobox {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+.header__logobox__logo {
+    height: 35px;
+}

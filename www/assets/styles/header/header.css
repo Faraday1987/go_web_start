@@ -1,0 +1,7 @@
+.header {
+    height: 95vh;
+    background-image: linear-gradient(to right bottom, #ffffff48, #000000af), url("../../images/bg/001.jpg");
+    background-size: cover;
+    background-position: top;
+    clip-path: polygon(0 0, 100% 0,  100% 75vh, 0 100%);
+}

@@ -1,0 +1,9 @@
+.menu__link {
+    font-size: 2rem;
+    margin-inline-end: 2rem;
+    margin-inline-start: 2rem;
+}
+
+.menu__link:hover {
+   text-decoration: underline;
+}

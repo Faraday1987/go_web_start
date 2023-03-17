@@ -1,0 +1,48 @@
+
+.header__textbox {
+    display: flex;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header__primary {
+    color: #FFF;
+    text-transform: uppercase;
+    perspective: 4000;
+}
+
+.header__primary__main {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    font-size: 9rem;
+    font-weight: 700;
+    letter-spacing: 3.5rem;
+    // animation-iteration-count: 3;
+    animation-timing-function: ease-in;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    // animation-delay: 0.5s;
+    backface-visibility: hidden;
+    overflow: hidden;
+
+}
+
+.header__primary__sub {
+    display: flex;
+    font-size: 4rem;
+    font-weight: 100;
+    letter-spacing: 0.5rem;
+    white-space: nowrap;
+     animation: moveInRight 1s ease-out;
+     backface-visibility: hidden;
+}
+
+
+
+// header__primary
+// > header__primary__main
+// > header__primary__sub

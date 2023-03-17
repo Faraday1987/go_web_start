@@ -28,6 +28,8 @@ func main() {
 
 	render.NewTemplates(&app)
 
+	http.Handle("/www/", http.StripPrefix("/www/", http.FileServer(http.Dir("www"))))
+
 	http.HandleFunc("/", handlers.Repo.Home)
 	http.HandleFunc("/about", handlers.Repo.About)
 

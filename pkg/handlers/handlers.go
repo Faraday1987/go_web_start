@@ -31,8 +31,9 @@ func (f *Repository) Home(w http.ResponseWriter, r *http.Request) {
 
 func (f *Repository) About(w http.ResponseWriter, r *http.Request) {
 
+	//passing params to the template
 	stringMap := make(map[string]string)
-	stringMap["test"] = "❤️"
+	stringMap["micoolparam"] = "This is mi cool param ❤️"
 
 	render.RenderTemplate(w, "about.page.tmpl", &models.TemplateData{
 		StringMap: stringMap,

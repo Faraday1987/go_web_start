@@ -1,0 +1,28 @@
+
+
+.header__button:link, 
+.header__button:visited {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 8rem;
+    text-decoration: none;
+    padding: 1rem 0.5rem;
+    transition: all .3s;
+}
+.header__button:hover {
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.5);
+    transform: translate3d(0,-3px,0);
+}
+.header__button:active {
+    background-color: #1f938499;
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.5);
+
+    transform: translate3d(-1px,0,0);
+}
+
+.header__button--calltoaction {
+    color: #1c1c1c;
+    background-color: #ffffff90;
+    margin: 1rem;
+    align-self: center;
+}

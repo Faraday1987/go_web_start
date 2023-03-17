@@ -1,14 +1,26 @@
 {{template "base" .}}
 
 
+{{block "css" .}}
+    <link rel="stylesheet" href="./www/assets/styles/header/header.css">
+    <link rel="stylesheet" href="./www/assets/styles/header/header-textbox.css">
+    <link rel="stylesheet" href="./www/assets/styles/header/header-button.css">
+    <link rel="stylesheet" href="./www/assets/styles/header/header-animations.css">
+    <link rel="stylesheet" href="./www/assets/styles/header/header-logobox.css">
+
+{{end}}
+
 {{define "content"}}
 
-<div class="container">
-    <h1>About page</h1>
-    <p>Parrafo de contenido</p>
 
-<p>Destde template {{index .StringMap "test" }}</p>
+<header class="header">
+    <div class="header__textbox">
+        <h1 class="header__primary">
+            <span class="header__primary__main">About</span>
+            <span class="header__primary__sub">{{index .StringMap "micoolparam" }}</span>
+        </h1>
+    </div>
+</header>
 
-</div>
 
 {{end}}

@@ -1,0 +1,58 @@
+
+:root {
+    --color-primary: #7ebccb;
+    --color-primary-light: #1098ba;
+    --color-primary-dark: #1bd578;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #e1e1e1;
+    background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark));
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    padding: 30px;
+}
+
+p,h1,h2,h3,h4,h5,h6{
+    overflow-wrap: break-word;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style: none;
+}
+
+img, video, canvas, svg {
+    max-width: 100%;
+}
+
+input, textarea, select {
+    font: inherit;
+}
